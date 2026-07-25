@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+*.pyo
+data/sp500.csv
+data/macro_indicators.csv
+data/precomputed_*.csv
+.env
+*.zip
