@@ -155,19 +155,6 @@ python run.py
 python tests/test_pipeline.py
 ```
 
----
-
-## Interview Talking Points
-
-1. **Walk-forward validation** — why K-Fold CV fails on autocorrelated time series and how expanding windows fix it
-2. **Shift integrity** — how `shift(1)` on targets guarantees no future leakage into rolling features
-3. **5-day target** — why predicting 5-day direction instead of next-day dramatically reduces noise and improves accuracy from 52% to 79%
-4. **Ensemble advantage** — how soft-voting across RF + XGBoost + LightGBM reduces variance vs any single model
-5. **Precision over accuracy** — why precision on BUY signals matters more than overall accuracy for long-only strategies
-6. **Regime-aware thresholding** — why a fixed threshold underperforms in high-VIX environments
-
----
-
 ## Tech Stack
 
 `Python` `scikit-learn` `XGBoost` `LightGBM` `pandas` `numpy` `yfinance` `Streamlit` `Plotly`
